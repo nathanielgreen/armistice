@@ -1,27 +1,15 @@
-var vid = document.getElementById("bgvid");
-var pauseButton = document.querySelector("#polina button");
+console.log("script loaded");
 
-function vidFade() {
-  vid.classList.add("stopfade");
-}
+var contactButton = document.querySelector("#contact-toggle");
+var contactDiv    = document.querySelector("#contact");
 
-vid.addEventListener('ended', function()
-{
-// only functional if "loop" is removed 
-vid.pause();
-// to capture IE10
-vidFade();
-}); 
-
-
-pauseButton.addEventListener("click", function() {
-  vid.classList.toggle("stopfade");
-  if (vid.paused) {
-    vid.play();
-    pauseButton.innerHTML = "Pause";
-  } else {
-    vid.pause();
-    pauseButton.innerHTML = "Paused";
-  }
-})
-
+contactButton.addEventListener("change", function() {
+  if(contactButton.checked) {
+    console.log("test");
+    contactDiv.style.opacity = 1;
+  } 
+  else {
+    console.log("tes2");
+    contactDiv.style.opacity = 0;
+  };
+});
