@@ -99,6 +99,7 @@ a {
   transition: 1s opacity;
   opacity: 0.3;
 }
+/* Header End */
 
 /* Mobile CSS */
 @media screen and (max-width: 500px) { 
