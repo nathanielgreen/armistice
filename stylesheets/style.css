@@ -37,8 +37,9 @@ a {
     opacity: 0.8;
   }
   #contact a {
+    font-family: 'Raleway', sans-serif;
     font-size: 36px;
-    opacity: 0.8;
+    opacity: 0.9;
     text-decoration: underline;
   }
 
@@ -97,7 +98,7 @@ a {
   background: #000;
   background-size: cover;
   transition: 1s opacity;
-  opacity: 0.3;
+  opacity: 1;
 }
 /* Header End */
 
