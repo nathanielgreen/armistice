@@ -23,6 +23,25 @@ a {
   width: 100%;
 }
 
+#about {
+  border-radius: 10px;
+  background: #000;
+  padding: 100px;
+  left: 50%;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: 1s opacity;
+  z-index: -50;
+}
+  #contact p { 
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    opacity: 0.9;
+  }
+  #contact
+
 #contact {
   left: 50%;
   opacity: 0;
