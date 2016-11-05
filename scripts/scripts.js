@@ -12,7 +12,7 @@ contactButton.addEventListener("change", function() {
     aboutButton.checked = false;
     aboutDiv.style.opacity = 0;
     contactDiv.style.opacity = 1;
-    video.style.opacity = 0.5;
+    video.style.opacity = 0.3;
   } 
   else {
     contactDiv.style.opacity = 0;
@@ -25,7 +25,7 @@ aboutButton.addEventListener("change", function() {
     contactButton.checked = false;
     contactDiv.style.opacity = 0;
     aboutDiv.style.opacity = 1;
-    video.style.opacity = 0.5;
+    video.style.opacity = 0.3;
   } 
   else {
     aboutDiv.style.opacity = 0;
