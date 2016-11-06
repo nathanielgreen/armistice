@@ -29,15 +29,16 @@ a {
   opacity: 0;
   position: absolute;
   text-align: center;
-  transition: 1s opacity;
-  height: 100%;
+  transition: 0.5s visibility;
+  transition: 1.5s opacity;
+  height: 90%;
   width: 100%;
   visibility: hidden;
   z-index: 20;
 }
   #about p { 
     font-family: 'Noto Sans', sans-serif;
-    font-size: 3vw;
+    font-size: 2.8vw;
     margin-left: 5%;
     margin-right: 5%;
     opacity: 0.9;
@@ -53,7 +54,8 @@ a {
   flex-direction: column;
   opacity: 0;
   position: absolute;
-  transition: 1s opacity;
+  transition: 0.5s visibility;
+  transition: 1.5s opacity;
   height: 100%;
   width: 100%;
   visibility: hidden;
@@ -99,7 +101,8 @@ a {
     flex: 10;
     flex-direction: column;
     opacity: 0;
-    transition: 1s opacity;
+    transition: 0.5s visibility;
+    transition: 1.5s opacity;
   }
   #mobile-nav-links a {
     align-items: center;

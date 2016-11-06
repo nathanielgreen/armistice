@@ -1,7 +1,7 @@
 console.log("script loaded");
 
 var mobileButton  = document.querySelector("#mobile-nav-toggle");
-var mobileLinks   = document.querySelector("#mobile-nav-links");
+var mobileDiv   = document.querySelector("#mobile-nav-links");
 var contactButton = document.querySelector("#contact-toggle");
 var contactDiv    = document.querySelector("#contact");
 var aboutButton   = document.querySelector("#about-toggle");
@@ -10,17 +10,17 @@ var video         = document.querySelector("video");
 
 mobileButton.addEventListener("change", function() {
   if(mobileButton.checked) {
-    uncheckAll("mobile");
+    unchecky("mobile");
   } 
   else {
-    mobileLinks.style.opacity = 0;
+    mobileDiv.style.opacity = 0;
     video.style.opacity = 1;
   };
 });
 
 contactButton.addEventListener("change", function() {
   if(contactButton.checked) {
-    uncheckAll("contact");
+    unchecky("contact");
   } 
   else {
     contactDiv.style.opacity = 0;
@@ -30,7 +30,7 @@ contactButton.addEventListener("change", function() {
 
 aboutButton.addEventListener("change", function() {
   if(aboutButton.checked) {
-    uncheckAll("about");
+    unchecky("about");
   } 
   else {
     aboutDiv.style.opacity = 0;
@@ -38,42 +38,18 @@ aboutButton.addEventListener("change", function() {
   };
 });
 
-uncheckAll = function(div) {
+unchecky = function(div) {
   video.style.opacity = 0.3;
-  if(div == "about") {
-    // Hide Others
-    mobileButton.checked = false;
-    mobileLinks.style.opacity = 0;
-    mobileLinks.style.visibility = "hidden";
-    contactButton.checked = false;
-    contactDiv.style.opacity = 0;
-    contactDiv.style.visibility = "hidden";
-    // Show Div
-    aboutDiv.style.visibility = "visible";
-    aboutDiv.style.opacity = 1;
-  } else if(div == "mobile") {
-    // Hide Others
-    aboutButton.checked = false;
-    aboutDiv.style.opacity = 0;  
-    aboutDiv.style.visibility = "visible";  
-    contactButton.checked = false;
-    contactDiv.style.opacity = 0;
-    contactDiv.style.visibility = "visible";
-    // Show Div
-    mobileLinks.style.visibility = "visible";
-    mobileLinks.style.opacity = 1;
-  } else if(div =="contact") {
-    // Hide Others
-    mobileButton.checked = false;
-    mobileLinks.style.opacity = 0;
-    mobileLinks.style.visibility = "visible";
-    aboutButton.checked = false;
-    aboutDiv.style.opacity = 0;  
-    aboutDiv.style.visibility = "visible";  
-    // Show Div
-    contactDiv.style.visibility = "visible";
-    contactDiv.style.opacity = 1;
-  };
+  eval(div + "Div").style.visibility = "visible";
+  eval(div + "Div").style.opacity = 1;
+  var arr = ["about", "contact", "mobile"];
+  var index = arr.indexOf(div);
+  arr.splice(index, 1);
+  arr.forEach(function(element) {
+    eval(element + "Button").checked = false;
+    eval(element + "Div").style.visibility = "hidden"
+    eval(element + "Div").style.opacity = 0;
+  });
 };
 
 window.mobilecheck = function() {
