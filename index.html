@@ -5,70 +5,81 @@
 
   <title>DJ Armistice</title>
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
-
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Dosis|Noto+Sans|Raleway"
     rel="stylesheet"> 
+
+  <!-- Stylesheets -->
 </head>
 <body>
-  <!-- Header -->
-  <div id="header">
+  <video id="video" playsinline autoplay muted loop>
+    <source src="videos/background.mp4" type="video/webm">
+    <source src="videos/background.mp4" type="video/mp4">
+  </video>
 
-    <video id="video" playsinline autoplay muted loop>
-      <source src="videos/background.mp4" type="video/webm">
-      <source src="videos/background.mp4" type="video/mp4">
-    </video>
-    
-    <div id="content">
-      <div id="contact">
-        <p>For bookings or business enquiries please contact</p>
-        <a href="mailto:info@armistice.co">info@armistice.co</a>
-      </div>
-
-      <div id="about">
-        <h3>ABOUT</h3>
-
-        <p>ARMISTICE (Ross) is an up & coming Producer/DJ based in London.</p> 
-
-        <p>Only 20, he has stormed his way through the scene playing at some 
-        of the biggest and best Venues in the world inc. XOYO, Ministry of Sound, 
-        Fire & Lightbox, Space, Ibiza/Mallorca Rocks, Canal Mills, Project 
-        Mallorca, Twickenham Stadium, The O2 Arena, MiNT Warehouse & many
-        more.</p>
-
-        <p>Born and Raised in Yorkshire, Ross started his DJ career in Leeds. It
-        wasn’t long before his Energetic house sets lead him to the Capital where
-        his name has grown into an established brand bringing his own event
-        ARMISTICE & FRIENDS to Brixton hitting capacity on the launch event.</p>
-
-        <p>Also a keen producer Ross is soon to be releasing his own highly
-        anticipated original music taking influences from his years of playing
-        alongside some of the best DJ’s around the world.</p>
-      </div>
+    <div id="contact">
+      <p>For bookings or business enquiries please contact</p>
+      <a href="mailto:info@armistice.co">info@armistice.co</a>
     </div>
 
-    <div id="navbar">
-      <div id="navbar-logo">
-        <img src="images/armisticelogo.png" />
-      </div>
-      <div id="navbar-links">
-        <input id="about-toggle" type="checkbox">
-          <label for="about-toggle" id="about-link" href="#">ABOUT</label>
-        </input>
-        <a href="https://soundcloud.com/armisticecloud">MUSIC</a>
-        <a href="https://www.facebook.com/armisticedj/">FACEBOOK</a>
-        <a href="https://twitter.com/djarmistice">TWITTER</a>
-        <a href="https://instagram.com/djarmistice">INSTAGRAM</a>
-        <input id="contact-toggle" type="checkbox">
-          <label for="contact-toggle" id="contact-link" href="#">CONTACT</label>
-        </input>
-      </div> 
-    </div>
+    <div id="about">
+      <h3>ABOUT</h3>
 
+      <p>ARMISTICE (Ross) is an up & coming Producer/DJ based in London.</p> 
+
+      <p>Only 20, he has stormed his way through the scene playing at some 
+      of the biggest and best Venues in the world inc. XOYO, Ministry of Sound, 
+      Fire & Lightbox, Space, Ibiza/Mallorca Rocks, Canal Mills, Project 
+      Mallorca, Twickenham Stadium, The O2 Arena, MiNT Warehouse & many
+      more.</p>
+
+      <p>Born and Raised in Yorkshire, Ross started his DJ career in Leeds. It
+      wasn’t long before his Energetic house sets lead him to the Capital where
+      his name has grown into an established brand bringing his own event
+      ARMISTICE & FRIENDS to Brixton hitting capacity on the launch event.</p>
+
+      <p>Also a keen producer Ross is soon to be releasing his own highly
+      anticipated original music taking influences from his years of playing
+      alongside some of the best DJ’s around the world.</p>
+    </div>
   </div>
-  <!-- Header End -->
+
+  <div id="navbar">
+    <div id="navbar-logo">
+      <img src="images/armisticelogo.png" />
+    </div>
+    <div id="navbar-links">
+      <input id="about-toggle" type="checkbox">
+        <label for="about-toggle" id="about-link" href="#">ABOUT</label>
+      </input>
+      <a href="https://soundcloud.com/armisticecloud">MUSIC</a>
+      <a href="https://www.facebook.com/armisticedj/">FACEBOOK</a>
+      <a href="https://twitter.com/djarmistice">TWITTER</a>
+      <a href="https://instagram.com/djarmistice">INSTAGRAM</a>
+      <input id="contact-toggle" type="checkbox">
+        <label for="contact-toggle" id="contact-link" href="#">CONTACT</label>
+      </input>
+    </div> 
+  </div>
+
+  <div id="mobile-nav">
+    <div id="mobile-nav-links">
+      <input id="about-toggle" type="checkbox">
+        <label for="about-toggle" id="about-link" href="#">ABOUT</label>
+      </input>
+      <a href="https://soundcloud.com/armisticecloud">MUSIC</a>
+      <a href="https://www.facebook.com/armisticedj/">FACEBOOK</a>
+      <a href="https://twitter.com/djarmistice">TWITTER</a>
+      <a href="https://instagram.com/djarmistice">INSTAGRAM</a>
+      <input id="contact-toggle" type="checkbox">
+        <label for="contact-toggle" id="contact-link" href="#">CONTACT</label>
+      </input>
+    </div>
+    <input id="mobile-nav-toggle" type="checkbox">
+      <label for="mobile-nav-toggle" id="mobile-nav-button">MENU</label>
+    </input>
+  </div>
+
 
 	<!-- Scripts -->
 	<script src="scripts/scripts.js"></script>

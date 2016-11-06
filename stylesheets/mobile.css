@@ -1,6 +1,7 @@
 /* General CSS */
 html {
   height: 100%;
+  width: 100%;
 }
 body {
   background: #000; 
@@ -8,7 +9,9 @@ body {
   font-family: "Noto Sans", sans-serif;
   height: 100%;
   margin: 0;
-  overflow-y:scroll
+  overflow: hidden;
+  position: relative;
+  width: 100%;
 }
 
 a {
@@ -18,19 +21,6 @@ a {
 /* General CSS End */
 
 /* Header */
-#header {
-  height: 100%;
-  width: 100%;
-}
-
-#content {
-  position: absolute;
-  text-align: center;
-  transform: translate(-50%, -50%);
-  top: 30%;
-  width: 100%;
-}
-
 #about {
   align-items: center;
   justify-content: center;
@@ -38,7 +28,6 @@ a {
   flex-direction: column;
   opacity: 0;
   position: absolute;
-  text-align: center;
   transition: 1s opacity;
   height: 100%;
   width: 100%;
@@ -47,13 +36,13 @@ a {
 }
   #about p { 
     font-family: 'Noto Sans', sans-serif;
+    font-size: 3vw;
     margin-left: 5%;
     margin-right: 5%;
-    font-size: 15px;
     opacity: 0.9;
   }
   #about h3 {
-    font-size: 20px;
+    font-size: 3vw;
   }
 
 #contact {
@@ -61,7 +50,7 @@ a {
   justify-content: center;
   display: flex;
   flex-direction: column;
-  opacity: 1;
+  opacity: 0;
   position: absolute;
   transition: 1s opacity;
   height: 100%;
@@ -70,77 +59,78 @@ a {
   z-index: 30;
 }
   #contact p { 
-    font-size: 16px;
+    font-size: 3vw;
     opacity: 0.9;
   }
   #contact a {
     font-family: 'Raleway', sans-serif;
-    font-size: 36px;
+    font-size: 6vw;
     opacity: 0.9;
     text-decoration: underline;
   }
 
 #navbar {
-  height: 5%;
-  bottom: 2%;
-  position: fixed;
-  display: flex;
-  width: 100%;
-  z-index: 30;
+  display: none;
+  visibility: hidden;
 }
-  #navbar-logo {
-    flex: 1; 
-    text-align: center;
-  }
-    #navbar-logo img {
-      max-width:100%;
-      max-height:100%;
-      opacity: 0.8;
-    }
-  #navbar-links {
-    align-items: center;
-    display: flex;
-    flex: 2.5;
-    font-size: 14px;
-    justify-content: center;
-  }
-    #navbar-links a {
-      margin-left: 20px;
-      margin-right: 20px;
-    }
-    #navbar-links input {
-      display: none;
-      visibility: hidden;
-    }
-    #navbar-links label {
-      margin-left: 20px;
-      margin-right: 20px;
-    }
-      #navbar-links label:hover {
-        cursor: pointer; 
-        cursor: hand;
-      }
 
 #mobile-nav {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  opacity: 0.8;
+  z-index: 1000;
+}
+  #mobile-nav label {
+    align-items: center;
+    background: none;
+    color: #f1f1f1;
+    display: flex;
+    flex: 1;
+    font-size: 5vw;
+    justify-content: center;
+  }
+  #mobile-nav-links {
+    display: flex;
+    flex: 10;
+    flex-direction: column;
+    opacity: 0;
+    transition: 1s opacity;
+  }
+  #mobile-nav-links a {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex: 1;
+    font-size: 5vw;
+  }
+  #mobile-nav-links label {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+  }
+
+input[type=checkbox] {
   display: none;
   visibility: hidden;
 }
 
 #video { 
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  margin: 0;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  transform: translateX(-50%) translateY(-50%);
-  background: #000;
-  background-size: cover;
+	position: absolute; 
+	right: 0; 
+	bottom: 0;
+	min-width: 100%; 
+	min-height: 100%;
+	width: auto; 
+	height: auto; 
+	z-index: -100;
+	background-size: cover;
   transition: 1s opacity;
-  opacity: 1;
+	overflow: hidden;
 }
 /* Header End */
 
