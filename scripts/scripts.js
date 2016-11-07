@@ -1,7 +1,7 @@
 console.log("script loaded");
 
 var mobileButton  = document.querySelector("#mobile-nav-toggle");
-var mobileDiv   = document.querySelector("#mobile-nav-links");
+var mobileDiv     = document.querySelector("#mobile-nav-links");
 var contactButton = document.querySelector("#contact-toggle");
 var contactDiv    = document.querySelector("#contact");
 var aboutButton   = document.querySelector("#about-toggle");
@@ -9,12 +9,12 @@ var aboutDiv      = document.querySelector("#about");
 var video         = document.querySelector("video");
 
 mobileButton.addEventListener("change", function() {
+  var div    = eval("mobile" + "Div");
   if(mobileButton.checked) {
     unchecky("mobile");
   } 
   else {
-    mobileDiv.style.opacity = 0;
-    video.style.opacity = 1;
+    unchecky("");
   };
 });
 
@@ -23,8 +23,7 @@ contactButton.addEventListener("change", function() {
     unchecky("contact");
   } 
   else {
-    contactDiv.style.opacity = 0;
-    video.style.opacity = 1;
+    unchecky("");
   };
 });
 
@@ -33,22 +32,28 @@ aboutButton.addEventListener("change", function() {
     unchecky("about");
   } 
   else {
-    aboutDiv.style.opacity = 0;
-    video.style.opacity = 1;
+    unchecky("");
   };
 });
 
 unchecky = function(div) {
-  video.style.opacity = 0.3;
-  eval(div + "Div").style.visibility = "visible";
-  eval(div + "Div").style.opacity = 1;
   var arr = ["about", "contact", "mobile"];
   var index = arr.indexOf(div);
-  arr.splice(index, 1);
+  if (div !== "") {
+    arr.splice(index, 1);
+    video.style.opacity = 0.3;
+    eval(div + "Div").style.visibility = "visible"
+    eval(div + "Div").style.opacity = 1;
+  };
+  if (arr.length == 3) {
+    video.style.opacity = 1;
+  };
   arr.forEach(function(element) {
     eval(element + "Button").checked = false;
-    eval(element + "Div").style.visibility = "hidden"
     eval(element + "Div").style.opacity = 0;
+    setTimeout(function() {
+      eval(element + "Div").style.visibility = "hidden"
+    }, 1000);
   });
 };
 
