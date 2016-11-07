@@ -26,6 +26,7 @@ a {
   justify-content: center;
   display: flex;
   flex-direction: column;
+  margin-bottom: 2%;
   opacity: 0;
   position: absolute;
   text-align: center;
