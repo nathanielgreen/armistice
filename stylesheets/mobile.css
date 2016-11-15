@@ -136,15 +136,3 @@ input[type=checkbox] {
 	overflow: hidden;
 }
 /* Header End */
-
-/* Mobile CSS */
-@media screen and (max-width: 500px) { 
-  div{width:70%;} 
-}
-
-@media screen and (max-device-width: 800px) {
-  #bgvid { 
-    display: none; 
-  }
-}
-

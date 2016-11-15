@@ -1,5 +1,3 @@
-console.log("script loaded");
-
 // Opacity Changer
 var mobileButton  = document.querySelector("#mobile-nav-toggle");
 var mobileDiv     = document.querySelector("#mobile-nav-links");
