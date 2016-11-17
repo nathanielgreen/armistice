@@ -11,8 +11,9 @@ A live version of the site is currently available at http://armistice.co/.
 
 # Media
 
-All media currently used in the site has been created by and is the property of
-ARMISTICE. The background video has been created by Benedict Richards.
+All media (logo's, graphics, etc) currently used in the site has been created by 
+and is the property of ARMISTICE. The background video has been created 
+by Benedict Richards.
 
 # Technologies
 
@@ -21,6 +22,6 @@ small amount of Javascript for the manipulation of CSS on button presses.
 
 # People
 
-Developer/Designer: [Nathaniel Green](http://ngreen.co)
-DJ: [Ross 'Armistice' Quinn](http://armistice.co)
-Film Maker/Producer: [Benedict Richards](http://www.brfr.uk/)
+- Developer/Designer: [Nathaniel Green](http://ngreen.co)
+- DJ: [Ross 'Armistice' Quinn](http://armistice.co)
+- Film Maker/Producer: [Benedict Richards](http://www.brfr.uk/)
