@@ -11,8 +11,8 @@ A live version of the site is currently available at http://armistice.co/.
 
 # Media
 
-All media (logo's, graphics, etc) currently used in the site has been created by 
-and is the property of ARMISTICE. The background video has been created 
+All media (logos, graphics, etc.) currently used in the site have been created by 
+and are the property of ARMISTICE. The background video has been created 
 by Benedict Richards.
 
 # Technologies
