@@ -86,7 +86,7 @@ a {
   position: fixed;
   display: flex;
   width: 100%;
-  z-index: 30;
+  z-index: 100;
 }
   #navbar-logo {
     flex: 1; 
@@ -127,10 +127,18 @@ a {
 }
 
 #video { 
-	text-align: center;
-	margin:0 auto;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 	overflow: hidden;
-	width: 150%;
   transition: 1s opacity;
+  height: 100%;
 }
+  #video video {
+    align-items: center;
+    width: 100%;
+    jutsify-content: center;
+    margin: 0 auto;
+  }
 /* Header End */
