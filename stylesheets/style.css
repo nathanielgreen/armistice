@@ -137,8 +137,6 @@ a {
 }
   #video video {
     align-items: center;
-    width: 100%;
     jutsify-content: center;
     margin: 0 auto;
   }
-/* Header End */
