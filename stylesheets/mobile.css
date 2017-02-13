@@ -137,6 +137,7 @@ input[type=checkbox] {
     align-items: center;
     width: 100%;
     transform: scale(4.2,4.2);
+    transition: 1s opacity;
     justify-content: center;
   }
 /* Header End */
