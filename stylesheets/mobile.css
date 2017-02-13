@@ -82,6 +82,7 @@ a {
   flex-direction: column;
   height: 100%;
   position: absolute;
+  font-family: 'Inconsolata', sans-serif;
   text-align: center;
   width: 100%;
   opacity: 0.8;
@@ -124,6 +125,18 @@ input[type=checkbox] {
 }
 
 #video { 
-  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	overflow: hidden;
+  transition: 1s opacity;
+  height: 100%;
 }
+  #video video {
+    align-items: center;
+    width: 100%;
+    transform: scale(4.2,4.2);
+    jutsify-content: center;
+  }
 /* Header End */
