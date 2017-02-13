@@ -9,6 +9,7 @@ body {
   font-family: "Noto Sans", sans-serif;
   height: 100%;
   margin: 0;
+	overflow-x: hidden;
 }
 
 a {
@@ -137,6 +138,7 @@ a {
 }
   #video video {
     align-items: center;
-    jutsify-content: center;
+    justify-content: center;
+    transition: 1s opacity;
     margin: 0 auto;
   }
