@@ -6,6 +6,7 @@ var contactDiv    = document.querySelector("#contact");
 var aboutButton   = document.querySelector("#about-toggle");
 var aboutDiv      = document.querySelector("#about");
 var video         = document.querySelector("video");
+var topimg        = document.querySelector("#topimg");
 
 mobileButton.addEventListener("change", function() {
   if(mobileButton.checked) {
@@ -42,9 +43,11 @@ unchecky = function(div) {
     eval(div + "Div").style.visibility = "visible"
     eval(div + "Div").style.opacity = 1;
     video.style.opacity = 0.3;
+    topimg.style.opacity = 0.3;
   };
   if (arr.length == 3) {
     video.style.opacity = 1;
+    topimg.style.opacity = 1;
   };
   arr.forEach(function(element) {
     eval(element + "Button").checked = false;

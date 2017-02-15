@@ -19,6 +19,11 @@ a {
 /* General CSS End */
 
 /* Header */
+#topimg {
+  display: none;
+  visibility: hidden;
+}
+
 #header {
   height: 100%;
   width: 100%;
