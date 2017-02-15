@@ -126,8 +126,9 @@ input[type=checkbox] {
 
 #topimg {
   width: 70%;
-  display: flex;
+  display: flex !important;
   top: 15%;
+  visibility: visible !important;
   left: 15%;
   margin: 0 auto;
   height: auto;
