@@ -148,13 +148,13 @@ input[type=checkbox] {
   justify-content: center;
   height: 100%;
   position: absolute;
-  z-index: 100;
+  z-index: -100;
 }
 
 video {
   transition: 1s opacity;
   positon: absolute;
-  z-index: 100;
+  z-index: -100;
   width: 100%;
 }
 /* Header End */
