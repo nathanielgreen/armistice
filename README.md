@@ -7,7 +7,7 @@ events and links to his social media accounts.
 
 # Live Version
 
-A live version of the site is currently available at http://armistice.co/.
+A live version of the site is not currently available.
 
 # Media
 
